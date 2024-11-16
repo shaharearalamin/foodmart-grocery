@@ -105,75 +105,7 @@ h6 {
   padding: 0;
   box-sizing: border-box;
 }
-/* start heading & navbar section */
-.container-fluid {
-  max-width: 1600px;
-}
-.offcanvas-cart-header {
-  font-size: 24px;
-  font-weight: bold;
-  color: var(--accent-color);
-}
 
-.offcanvasNotification span {
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  background-color: var(--accent-color);
-  color: white;
-  border-radius: 50%;
-  padding: 5px;
-  font-size: 14px;
-  font-weight: bold;
-  margin-left: 10px;
-  display: grid;
-  place-items: center;
-}
+/* start hero section */
 
-.cart-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.cart-item:last-child {
-  border-bottom: none;
-}
-
-.cart-item-title {
-  font-weight: bold;
-  color: #333;
-}
-
-.cart-item-description {
-  font-size: 12px;
-  color: #888;
-}
-
-.cart-total strong {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: right;
-  margin-top: 15px;
-}
-
-.navbarIcon svg {
-  color: rgb(0, 0, 0) !important;
-}
-.checkout-btn {
-  background-color: var(--accent-color);
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 15px;
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    background-color: #ffb300;
-  }
-}
-/* end heading section */
+/* end hero section */
