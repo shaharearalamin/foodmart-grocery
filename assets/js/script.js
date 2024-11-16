@@ -1,29 +1,28 @@
 $(document).ready(function () {
-  // Simulate a 2-second loading time
   setTimeout(function () {
-    $(".preloader-wrapper").fadeOut(); // Hide the preloader
-    $("#content").fadeIn(); // Show the content
+    $(".preloader-wrapper").fadeOut(); 
+    $("#content").fadeIn(); 
   }, 1000);
 });
 
 // owl carousel slider for hero seciton 
 $(".heroBannerSliderWrapper").owlCarousel({
-  // autoplay: true, // Automatically play the slider
-  autoplayTimeout: 2000, // Time in milliseconds (e.g., 2000ms = 2 seconds)
-  autoplayHoverPause: true, // Pause on hover
-  loop: true, // Enable infinite loop
-  margin: 10, // Space between items
-  nav: false, // Show navigation arrows
+  autoplay: true, 
+  autoplayTimeout: 2000, 
+  autoplayHoverPause: true, 
+  loop: true, 
+  margin: 10, 
+  nav: false,
   dots:true,
   responsive: {
     0: {
-      items: 1, // 1 item on small screens
+      items: 1, 
     },
     600: {
-      items: 1, // 3 items on medium screens
+      items: 1, 
     },
     1000: {
-      items: 1, // 5 items on large screens
+      items: 1,
     },
   },
 });

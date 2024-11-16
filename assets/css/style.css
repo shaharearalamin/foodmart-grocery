@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 /* Theme Colors */
 :root {
@@ -13,8 +11,8 @@
   --primary-color: #6995b1;
   --light-primary-color: #eef1f3;
   --bs-primary: #ffc43f;
-  --bg-primary: #E6F3FA;
-  --paragraph-color:  #818383;
+  --bg-primary: #e6f3fa;
+  --paragraph-color: #818383;
 }
 /* Preloader Wrapper */
 .preloader-wrapper {
@@ -113,154 +111,149 @@ h6 {
 }
 
 /* start hero section */
-#hero{
-  border: 1px solid #000;
+#hero {
+margin-bottom: 50px;
 }
-.heroBannerColWrapper{
+.heroBannerColWrapper {
   position: relative;
 }
-  /* .heroBannerColWrapper,.heroBannerColWrapperTwo{
-  height: 100vh !important;
-  } */
 
-.heroBannerSliderWrapper .heroSliderItem{
-  /* border: 1px solid #000; */
+.heroBannerSliderWrapper .heroSliderItem {
   width: 100% !important;
- /* min-height: 60vh ; */
- background-color:var(--bg-primary) !important;
- padding: 50px 0px ;
- height: 100% !important;
+  background-color: var(--bg-primary) !important;
+  padding: 50px 0px;
+  height: 100% !important;
 }
-/* Dots wrapper customization */
+
 .heroBannerSliderWrapper .owl-dots {
-  position: absolute; 
-  bottom: 50px; 
+  position: absolute;
+  bottom: 50px;
   left: 0;
   right: 0;
-  text-align: center; 
+  text-align: center;
   z-index: 10;
 }
-
-/* Style individual dots */
 .heroBannerSliderWrapper .owl-dots .owl-dot {
-  width: 14px; 
-  height: 14px; 
-  margin:0px 10px ; 
-  background: rgba(255, 255, 255, 0.5); 
-  border-radius: 50%; 
+  width: 14px;
+  height: 14px;
+  margin: 0px 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
   display: inline-block;
-  transition: background 0.3s ease; 
+  transition: background 0.3s ease;
   cursor: pointer;
   box-shadow: none;
 }
-
-/* Remove inner small dots */
 .heroBannerSliderWrapper .owl-dots .owl-dot span {
   display: none !important;
 }
-
-/* Change background color for active dot */
 .heroBannerSliderWrapper .owl-dots .owl-dot.active {
   background: var(--bs-primary);
 }
-
-.heroSlidercontentOne h4{
-      font-family: 'Garamond';
-    font-size: clamp(30px,3vw,40px);
-    text-transform: capitalize;
-    color: var(--accent-color);
-    font-weight: 600;
-    margin-bottom: 1rem ;
+.heroSlidercontentOne h4 {
+  font-family: "Garamond";
+  font-size: clamp(30px, 3vw, 40px);
+  text-transform: capitalize;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
-.heroSlidercontentOne h2{
-     font-size: clamp(44px,3vw,50px);
-     font-family: var(--heading-font);
-    color: var(--dark-color);
-    font-weight: 700;
-    text-transform: capitalize;
-    line-height: 130%;
-    margin-bottom: 1rem;
-
+.heroSlidercontentOne h2 {
+  font-size: clamp(44px, 3vw, 50px);
+  font-family: var(--heading-font);
+  color: var(--dark-color);
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 130%;
+  margin-bottom: 1rem;
 }
-.heroSlidercontentOne p{
-font-size: 16px;
-     font-family: var(--body-font);
-    color: var(--paragraph-color);
-    font-weight: 500;
-    line-height: 170%;
-    margin-bottom: 1rem;
-    letter-spacing: 1px;
+.heroSlidercontentOne p {
+  font-size: 16px;
+  font-family: var(--body-font);
+  color: var(--paragraph-color);
+  font-weight: 500;
+  line-height: 170%;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
-.heroSlidercontentOne{
-  min-height: 42vh !important;
+.heroSlidercontentOne {
   overflow: hidden !important;
+  height: 100% !important;
 }
 
- .heroSliderImg img{
+.heroSliderImg img {
   max-width: 300px !important;
   height: auto !important;
-  margin: auto 20px ;
- }
- .heroBannerColWrapperTwo{
-    background: #EEF5E5;
- }
- .heroBannerColWrapperTwo h4{
-  font-family: 'Garamond';
-    font-size:  clamp(28px,3vw,25px);
-    color: black;
-    text-transform: capitalize;
-    font-weight: 400;
-    margin-bottom: 1rem ;
- }
- .heroBannerColWrapperTwo h2{
-    font-size: clamp(30px,3vw,30px);
-     font-family: var(--heading-font);
-    color: var(--dark-color);
-    font-weight: 700;
-    text-transform: capitalize;
-    line-height: 140%;
-    margin-bottom: 1rem;
- }
- .bannerTwoContent{
+  margin: auto 20px;
+}
+.heroBannerColWrapperTwo {
+  background: #eef5e5;
+}
+.heroBannerColWrapperTwo h4 {
+  font-family: "Garamond";
+  font-size: clamp(28px, 3vw, 25px);
+  color: black;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.heroBannerColWrapperTwo h2 {
+  font-size: clamp(30px, 3vw, 30px);
+  font-family: var(--heading-font);
+  color: var(--dark-color);
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 140%;
+  margin-bottom: 1rem;
+}
+.bannerTwoContent {
   display: flex;
   align-items: start;
   align-content: center;
   justify-content: center;
   flex-direction: column;
- }
- .bannerContentBtn{
+}
+.bannerContentBtn {
   padding: 5px 0px !important;
   background: transparent;
   border: none;
   color: var(--paragraph-color);
-  font-size: 16px ;
- }
- .bannerTwoContentOne{
+  font-size: 16px;
+}
+.bannerTwoContentOne {
   position: relative;
- }
- .bannerTwoContent img{
+}
+.bannerTwoContent img {
   position: absolute;
   bottom: 0;
   right: 0;
-  max-width: auto ;
+  max-width: 300px;
   object-fit: cover !important;
- }
- .bannerTwoContentOne{
-  min-height: 286px !important;
- }
- @media screen and (max-width:991px) {
-    .heroBannerColWrapperTwo{
-      margin-top: 20px ;
-    }
-    .bannerTwoContent img{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  max-width: 280px ;
- }
-  .bannerTwoContentOne{
-  min-height: 220px !important;
- }
- }
- 
+}
+.bannerTwoContentOne {
+  min-height: 266px !important;
+}
+.setBannerBgcolor{
+  background: #F9EBE7;
+}
+@media screen and (max-width: 991px) {
+  .heroBannerColWrapperTwo {
+    margin-top: 20px;
+  }
+  .bannerTwoContent img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 280px;
+  }
+  .bannerTwoContentOne {
+    min-height: 220px !important;
+  }
+}
+
 /* end hero section */
+
+
+/* start category section  */
+
+/* end category section  */
