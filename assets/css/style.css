@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
 /* Theme Colors */
 :root {
   --accent-color: #ffc43f;
@@ -9,6 +13,8 @@
   --primary-color: #6995b1;
   --light-primary-color: #eef1f3;
   --bs-primary: #ffc43f;
+  --bg-primary: #E6F3FA;
+  --paragraph-color:  #818383;
 }
 /* Preloader Wrapper */
 .preloader-wrapper {
@@ -107,5 +113,86 @@ h6 {
 }
 
 /* start hero section */
+#hero{
+  border: 1px solid #000;
+}
+.heroBannerColWrapper{
+  position: relative;
+}
+.heroBannerSliderWrapper .heroSliderItem{
+  /* border: 1px solid #000; */
+  width: 100% !important;
+ /* min-height: 60vh ; */
+ background-color:var(--bg-primary) !important;
+ padding: 50px 0px ;
+}
+/* Dots wrapper customization */
+.heroBannerSliderWrapper .owl-dots {
+  position: absolute; 
+  bottom: 50px; 
+  left: 0;
+  right: 0;
+  text-align: center; 
+  z-index: 10;
+}
 
+/* Style individual dots */
+.heroBannerSliderWrapper .owl-dots .owl-dot {
+  width: 14px; 
+  height: 14px; 
+  margin:0px 10px ; 
+  background: rgba(255, 255, 255, 0.5); 
+  border-radius: 50%; 
+  display: inline-block;
+  transition: background 0.3s ease; 
+  cursor: pointer;
+  box-shadow: none;
+}
+
+/* Remove inner small dots */
+.heroBannerSliderWrapper .owl-dots .owl-dot span {
+  display: none !important;
+}
+
+/* Change background color for active dot */
+.heroBannerSliderWrapper .owl-dots .owl-dot.active {
+  background: var(--bs-primary);
+}
+
+.heroSlidercontentOne h4{
+      font-family: 'Garamond';
+    font-size: clapm(35px,3vw,40px);
+    text-transform: capitalize;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 1rem ;
+}
+.heroSlidercontentOne h2{
+     font-size: clamp(44px,3vw,50px);
+     font-family: var(--heading-font);
+    color: var(--dark-color);
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 130%;
+    margin-bottom: 1rem;
+
+}
+.heroSlidercontentOne p{
+font-size: 16px;
+     font-family: var(--body-font);
+    color: var(--paragraph-color);
+    font-weight: 500;
+    line-height: 170%;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+.heroSlidercontentOne{
+  /* min-height: 50vh !important; */
+}
+
+ .heroSliderImg img{
+  max-width: 300px !important;
+  height: auto !important;
+  margin: auto 20px ;
+ }
 /* end hero section */
