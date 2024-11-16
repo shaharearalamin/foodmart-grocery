@@ -119,12 +119,17 @@ h6 {
 .heroBannerColWrapper{
   position: relative;
 }
+  /* .heroBannerColWrapper,.heroBannerColWrapperTwo{
+  height: 100vh !important;
+  } */
+
 .heroBannerSliderWrapper .heroSliderItem{
   /* border: 1px solid #000; */
   width: 100% !important;
  /* min-height: 60vh ; */
  background-color:var(--bg-primary) !important;
  padding: 50px 0px ;
+ height: 100% !important;
 }
 /* Dots wrapper customization */
 .heroBannerSliderWrapper .owl-dots {
@@ -161,7 +166,7 @@ h6 {
 
 .heroSlidercontentOne h4{
       font-family: 'Garamond';
-    font-size: clapm(35px,3vw,40px);
+    font-size: clamp(30px,3vw,40px);
     text-transform: capitalize;
     color: var(--accent-color);
     font-weight: 600;
@@ -187,7 +192,8 @@ font-size: 16px;
     letter-spacing: 1px;
 }
 .heroSlidercontentOne{
-  /* min-height: 50vh !important; */
+  min-height: 42vh !important;
+  overflow: hidden !important;
 }
 
  .heroSliderImg img{
@@ -195,4 +201,66 @@ font-size: 16px;
   height: auto !important;
   margin: auto 20px ;
  }
+ .heroBannerColWrapperTwo{
+    background: #EEF5E5;
+ }
+ .heroBannerColWrapperTwo h4{
+  font-family: 'Garamond';
+    font-size:  clamp(28px,3vw,25px);
+    color: black;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 1rem ;
+ }
+ .heroBannerColWrapperTwo h2{
+    font-size: clamp(30px,3vw,30px);
+     font-family: var(--heading-font);
+    color: var(--dark-color);
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 140%;
+    margin-bottom: 1rem;
+ }
+ .bannerTwoContent{
+  display: flex;
+  align-items: start;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+ }
+ .bannerContentBtn{
+  padding: 5px 0px !important;
+  background: transparent;
+  border: none;
+  color: var(--paragraph-color);
+  font-size: 16px ;
+ }
+ .bannerTwoContentOne{
+  position: relative;
+ }
+ .bannerTwoContent img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: auto ;
+  object-fit: cover !important;
+ }
+ .bannerTwoContentOne{
+  min-height: 286px !important;
+ }
+ @media screen and (max-width:991px) {
+    .heroBannerColWrapperTwo{
+      margin-top: 20px ;
+    }
+    .bannerTwoContent img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 280px ;
+ }
+  .bannerTwoContentOne{
+  min-height: 220px !important;
+ }
+ }
+ 
 /* end hero section */
