@@ -133,6 +133,7 @@ margin-bottom: 50px;
   text-align: center;
   z-index: 10;
 }
+
 .heroBannerSliderWrapper .owl-dots .owl-dot {
   width: 14px;
   height: 14px;
@@ -255,5 +256,155 @@ margin-bottom: 50px;
 
 
 /* start category section  */
+#category{
+  width: 100%;
+  margin-bottom: 50px ;
+  background-color: #ffffff;
+}
+
+.categoryHeading h2{
+ font-size: clamp(30px, 3vw, 35px);
+  font-family: var(--heading-font);
+  color: var(--dark-color);
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 140%;
+  margin-bottom: 1rem;
+  margin-bottom: 0px !important;
+}
+.categorySlider .item{
+  height: 200px;
+  border: 1px solid #000;
+}
+
+.categorySliderWrapper {
+  position: relative; 
+}
+
+.categorySliderWrapper .categoryItem {
+  min-height: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; 
+  z-index: 1; 
+  box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.03);
+}
+
+.categorySliderWrapper .categoryItem:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.1);
+}
+
+.categorySliderWrapper .owl-item {
+  margin: 10px auto ;
+  padding: 50px 0px ;
+}
+.category-nav button:not(:nth-child(1)){
+  background: rgb(204, 204, 204);
+  padding: 4px 8px ;
+  border-radius: 6px ;
+  border: none !important;
+}
+.categoryCardHeading h4{
+ font-size: clamp(15px, 3vw, 20px);
+}
+@media screen and (max-width:576px) {
+    .category-nav button:nth-child(1){
+      display: none !important;
+    }
+}
 
 /* end category section  */
+
+/* start Brands section  */
+#Brand{
+  width: 100%;
+  margin-bottom: 50px ;
+  background-color: #ffffff;
+}
+
+.categoryHeading h2{
+ font-size: clamp(30px, 3vw, 35px);
+  font-family: var(--heading-font);
+  color: var(--dark-color);
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 140%;
+  margin-bottom: 1rem;
+  margin-bottom: 0px !important;
+}
+.BrandSliderWrapper p{
+  text-transform: capitalize;
+  color: var(--paragraph-color);
+  margin: 5px 0px !important;
+  font-size: 16px ;
+}
+.BrandSliderWrapper h4{
+  text-transform: capitalize;
+ font-size: clamp(15px, 3vw, 20px);
+}
+.categorySlider .item{
+  height: 200px;
+  border: 1px solid #000;
+}
+
+.BrandSliderWrapper {
+  position: relative; 
+}
+
+.BrandSliderWrapper .categoryItem {
+  min-height: 150px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; 
+  z-index: 1; 
+  box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.03);
+}
+.BrandSliderWrapper .categoryCardIcon span{
+ width: 100px;
+ height: 100% !important;
+ display: block;
+ margin: 0px 20px 0 0 ;
+ border-radius: 10px;
+}
+.BrandSliderWrapper .categoryCardIcon span img{
+ border-radius: 10px;
+ width: 100%;
+ height: 100%;
+ display: block;
+ object-fit: cover;
+
+}
+
+.BrandSliderWrapper .categoryItem:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.1);
+}
+
+.BrandSliderWrapper .owl-item {
+  margin: 10px auto ;
+  padding: 50px 0px ;
+}
+.category-nav button:not(:nth-child(1)){
+  background: rgb(204, 204, 204);
+  padding: 4px 8px ;
+  border-radius: 6px ;
+  border: none !important;
+}
+@media screen and (max-width:576px) {
+    .category-nav button:nth-child(1){
+      display: none !important;
+    }
+}
+
+/* end Brands section  */
