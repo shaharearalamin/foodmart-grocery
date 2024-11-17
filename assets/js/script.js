@@ -149,4 +149,30 @@ $(document).ready(function(){
         });
       });
 
- // end product section tabs 
+// counter 
+    // সমস্ত 'productCounter' এলিমেন্ট সংগ্রহ করুন
+const counters = document.querySelectorAll(".productCounter");
+
+counters.forEach((counter) => {
+  const decrementButton = counter.querySelector(".decrement");
+  const incrementButton = counter.querySelector(".increment");
+  const valueElement = counter.querySelector(".value");
+
+  let count = 1; // প্রতিটি কাউন্টারের জন্য আলাদা ভেরিয়েবল
+
+  // ইনক্রিমেন্ট ইভেন্ট হ্যান্ডলার
+  incrementButton.addEventListener("click", () => {
+    count++;
+    valueElement.textContent = count;
+  });
+
+  // ডিক্রিমেন্ট ইভেন্ট হ্যান্ডলার
+  decrementButton.addEventListener("click", () => {
+    if (count > 0) {
+      count--;
+      valueElement.textContent = count;
+    }
+  });
+});
+
+ // end product section tabs
