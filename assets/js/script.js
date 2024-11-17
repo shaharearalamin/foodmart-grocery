@@ -62,14 +62,14 @@ $(document).ready(function(){
   });
 
   // Custom next and prev button functionality
-  $(".owl-next, .owl-prev").click(function() {
-    var target = $(this).data('target'); // Get the target slider (e.g., category1, category2)
+  $(".owl-nextCategory, .owl-prevCategory").click(function () {
+    var target = $(this).data("target"); // Get the target slider (e.g., category1, category2)
     var owl = $("." + target); // Select the corresponding owl-carousel based on the target
 
-    if ($(this).hasClass('owl-next')) {
-      owl.trigger('next.owl.carousel');
-    } else if ($(this).hasClass('owl-prev')) {
-      owl.trigger('prev.owl.carousel');
+    if ($(this).hasClass("owl-nextCategory")) {
+      owl.trigger("next.owl.carousel");
+    } else if ($(this).hasClass("owl-prevCategory")) {
+      owl.trigger("prev.owl.carousel");
     }
   });
 });
@@ -106,14 +106,16 @@ $(document).ready(function(){
   });
 
   // Custom next and prev button functionality
-  $(".owl-next, .owl-prev").click(function() {
-    var target = $(this).data('target'); // Get the target slider (e.g., category1, category2)
-    var owl = $(this).closest(".container-fluid").find("." + target); // Find the specific owl-carousel in the same section
+  $(".owl-nextBrand, .owl-prevBrand").click(function () {
+    var target = $(this).data("target"); // Get the target slider (e.g., category1, category2)
+    var owl = $(this)
+      .closest(".container-fluid")
+      .find("." + target); // Find the specific owl-carousel in the same section
 
-    if ($(this).hasClass('owl-next')) {
-      owl.trigger('next.owl.carousel');
-    } else if ($(this).hasClass('owl-prev')) {
-      owl.trigger('prev.owl.carousel');
+    if ($(this).hasClass("owl-nextBrand")) {
+      owl.trigger("next.owl.carousel");
+    } else if ($(this).hasClass("owl-prevBrand")) {
+      owl.trigger("prev.owl.carousel");
     }
   });
 });
