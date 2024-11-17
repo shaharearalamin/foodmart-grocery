@@ -120,4 +120,33 @@ $(document).ready(function(){
   });
 });
 
-// Brand owl carousel slider 
+// Brand owl carousel slider
+
+ // start product section tabs 
+      // Tab Functionality
+      document.querySelectorAll(".tab-link").forEach((button) => {
+        button.addEventListener("click", function () {
+          const tabId = this.dataset.tab;
+
+          // Remove active class from all tabs and content
+          document.querySelectorAll(".tab-link").forEach((btn) => btn.classList.remove("active"));
+          document.querySelectorAll(".tab-content").forEach((content) => content.classList.remove("active"));
+
+          // Add active class to current tab and its content
+          this.classList.add("active");
+          const activeTab = document.getElementById(tabId);
+          activeTab.classList.add("active");
+
+          // Add animation classes to cards (even/odd)
+          const cards = activeTab.querySelectorAll(".card");
+          cards.forEach((card, index) => {
+            if (index % 2 === 0) {
+              card.classList.add("even"); // Apply slide from left
+            } else {
+              card.classList.add("odd"); // Apply slide from right
+            }
+          });
+        });
+      });
+
+ // end product section tabs 
