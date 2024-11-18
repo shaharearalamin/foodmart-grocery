@@ -624,6 +624,7 @@ margin-bottom: 50px;
   overflow: hidden;
   min-height: 200px;
   margin-bottom: 50px ;
+  overflow: hidden;
   
 }
 #discount .card {
@@ -957,6 +958,7 @@ margin-bottom: 50px;
 #blog{
   margin: 100px auto !important;
   min-height: 50vh !important;
+  overflow: hidden !important;
 }
 #blog .blogHeading{
   display: flex;
@@ -1033,11 +1035,11 @@ object-fit: cover !important;
 #app{
   margin-top: 200px;
   min-height: 50vh;
-  margin-bottom: 1500px ;
+  margin-bottom: 50px ;
 }
 #app .appContainerWrapper{
   min-height: 50vh;
-  background-color: #f1ede1;
+  background-color: #FFF9EB;
   width: 100% !important;
   border-radius: 20px ;
  
@@ -1092,38 +1094,62 @@ object-fit: cover !important;
 }
 /* end app section  */
 
-/* gpt scroll animation */
-#discount .card {
-  opacity: 0;
-  transform: translateX(0) translateY(0); 
-  transition: transform 0.6s ease, opacity 0.6s ease; 
+/* start people section  */
+#people{
+  margin: 150px 0px 100px 0px ;
+  overflow: hidden;
 }
-#discount .card[data-direction="left"] {
-  transform: translateX(-100px); 
+.peopleWrapper{
+  height: 100%;
+}
+.peopleHeading h2{
+  font-size: clamp(24px, 3vw, 35px);
+  font-family: var(--heading-font);
+  color: var(--dark-color);
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 140%;
+  padding-left: 8px ;
+  margin-bottom: 50px !important;
+}
+.peopleBtnGroup {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ align-content: center;
+ justify-content: center;
+}
+.peopleBtnGroup .btn{
+  background: #FFF9EB !important;
+  color: var(--paragraph-color);
+  flex-grow: 1 !important;
+  &:hover{
+    background: #fae3af !important; 
+  }
 }
 
-#discount .card.animate[data-direction="left"] {
-  transform: translateX(0); 
-  opacity: 1;
+/* end people section  */
+
+/* start small card section */
+.smallCardSeciton {
+  background-color: #ffffff;
+  margin-bottom: 100px ;
 }
-
-
-#discount .card[data-direction="top"] {
-  transform: translateY(-100px); 
+.smallCardSeciton i {
+  color: #007bff;
 }
-
-#discount .card.animate[data-direction="top"] {
-  transform: translateY(0); 
-  opacity: 1;
+.smallCardSeciton h5 {
+  margin-top: 10px;
+  margin-bottom: 8px;
 }
-
-#discount .card[data-direction="right"] {
-  transform: translateX(100px);
+.smallCard{
+  padding: 20px;
+  transition: all .2s ease-in-out;
+  border-radius: 10px ;
+  &:hover{
+    box-shadow: 1px 1px 10px rgb(216, 216, 216);
+    cursor: pointer;
+    margin-top:-5px ;
+  }
 }
-
-#discount .card.animate[data-direction="right"] {
-  transform: translateX(0); 
-  opacity: 1;
-}
-
-/* gpt scroll animation */
+/* end small card section */

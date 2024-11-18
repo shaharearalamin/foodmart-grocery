@@ -25,3 +25,41 @@
                   </div>
                 </div>
                 <!-- card -->
+
+
+                
+/* gpt  card scroll animation */
+#discount .card {
+  opacity: 0;
+  transform: translateX(0) translateY(0); 
+  transition: transform 0.6s ease, opacity 0.6s ease; 
+}
+#discount .card[data-direction="left"] {
+  transform: translateX(-100px); 
+}
+
+#discount .card.animate[data-direction="left"] {
+  transform: translateX(0); 
+  opacity: 1;
+}
+
+
+#discount .card[data-direction="top"] {
+  transform: translateY(-100px); 
+}
+
+#discount .card.animate[data-direction="top"] {
+  transform: translateY(0); 
+  opacity: 1;
+}
+
+#discount .card[data-direction="right"] {
+  transform: translateX(100px);
+}
+
+#discount .card.animate[data-direction="right"] {
+  transform: translateX(0); 
+  opacity: 1;
+}
+
+/* gpt card  scroll animation */
