@@ -176,3 +176,50 @@ counters.forEach((counter) => {
 });
 
  // end product section tabs
+
+ 
+// Brand owl carousel slider 
+$(document).ready(function(){
+  // Initialize Owl Carousels for multiple sliders
+  $(".sellingSliderWrapper").each(function () {
+    var owl = $(this); // Each individual carousel
+
+    owl.owlCarousel({
+      items: 1, // Default to 1 item
+      loop: true,
+      margin: 10,
+      nav: false, // Disable default nav
+      dots: false, // Disable dots
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 2,
+        },
+        900: {
+          items: 3,
+        },
+        1200: {
+          items: 4,
+        },
+      },
+    });
+  });
+
+  // Custom next and prev button functionality
+  $(".owl-nextBrand, .owl-prevBrand").click(function () {
+    var target = $(this).data("target"); // Get the target slider (e.g., category1, category2)
+    var owl = $(this)
+      .closest(".container-fluid")
+      .find("." + target); // Find the specific owl-carousel in the same section
+
+    if ($(this).hasClass("owl-nextBrand")) {
+      owl.trigger("next.owl.carousel");
+    } else if ($(this).hasClass("owl-prevBrand")) {
+      owl.trigger("prev.owl.carousel");
+    }
+  });
+});
+
+// Brand owl carousel slider
