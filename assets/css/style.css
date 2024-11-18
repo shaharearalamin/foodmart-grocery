@@ -619,6 +619,38 @@ margin-bottom: 50px;
 
 /* end products section  */
 
+/* start discount section */
+#discount .card {
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+}
+
+#discount .card-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#discount button{
+  width: 200px !important;
+}
+
+#discount .text-warning{
+  font-family: "Garamond";
+}
+@media screen and (max-width:576px) {
+    #discount img{
+  width: 200px !important;
+}
+
+#discount button{
+  width: 100px !important;
+}
+
+}
+/* end discount section */
 
 /* start selling section  */
 #selling{
