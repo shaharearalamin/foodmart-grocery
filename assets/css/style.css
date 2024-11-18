@@ -656,8 +656,43 @@ margin-bottom: 50px;
 #discount button{
   width: 120px !important;
 }
-
 }
+
+/* gpt scroll animation */
+#discount .card {
+  opacity: 0;
+  transform: translateX(0) translateY(0); 
+  transition: transform 0.6s ease, opacity 0.6s ease; 
+}
+#discount .card[data-direction="left"] {
+  transform: translateX(-100px); 
+}
+
+#discount .card.animate[data-direction="left"] {
+  transform: translateX(0); 
+  opacity: 1;
+}
+
+
+#discount .card[data-direction="top"] {
+  transform: translateY(-100px); 
+}
+
+#discount .card.animate[data-direction="top"] {
+  transform: translateY(0); 
+  opacity: 1;
+}
+
+#discount .card[data-direction="right"] {
+  transform: translateX(100px);
+}
+
+#discount .card.animate[data-direction="right"] {
+  transform: translateX(0); 
+  opacity: 1;
+}
+
+/* gpt scroll animation */
 /* end discount section */
 
 /* start selling section  */
@@ -956,13 +991,49 @@ object-fit: cover !important;
   height: 350px;
   overflow: hidden;
 }
+
+/* gpt scroll animation */
+#blog .card {
+  opacity: 0;
+  transform: translateX(0) translateY(0); 
+  transition: transform 0.6s ease, opacity 0.6s ease; 
+}
+#blog .card[data-direction="left"] {
+  transform: translateX(-100px); 
+}
+
+#blog .card.animate[data-direction="left"] {
+  transform: translateX(0); 
+  opacity: 1;
+}
+
+
+#blog .card[data-direction="top"] {
+  transform: translateY(-100px); 
+}
+
+#blog .card.animate[data-direction="top"] {
+  transform: translateY(0); 
+  opacity: 1;
+}
+
+#blog .card[data-direction="right"] {
+  transform: translateX(100px);
+}
+
+#blog .card.animate[data-direction="right"] {
+  transform: translateX(0); 
+  opacity: 1;
+}
+
+/* gpt scroll animation */
 /* end blog section  */
 
 /* start app section  */
 #app{
   margin-top: 200px;
   min-height: 50vh;
-  margin-bottom: 50px ;
+  margin-bottom: 1500px ;
 }
 #app .appContainerWrapper{
   min-height: 50vh;
@@ -1020,3 +1091,39 @@ object-fit: cover !important;
   
 }
 /* end app section  */
+
+/* gpt scroll animation */
+#discount .card {
+  opacity: 0;
+  transform: translateX(0) translateY(0); 
+  transition: transform 0.6s ease, opacity 0.6s ease; 
+}
+#discount .card[data-direction="left"] {
+  transform: translateX(-100px); 
+}
+
+#discount .card.animate[data-direction="left"] {
+  transform: translateX(0); 
+  opacity: 1;
+}
+
+
+#discount .card[data-direction="top"] {
+  transform: translateY(-100px); 
+}
+
+#discount .card.animate[data-direction="top"] {
+  transform: translateY(0); 
+  opacity: 1;
+}
+
+#discount .card[data-direction="right"] {
+  transform: translateX(100px);
+}
+
+#discount .card.animate[data-direction="right"] {
+  transform: translateX(0); 
+  opacity: 1;
+}
+
+/* gpt scroll animation */

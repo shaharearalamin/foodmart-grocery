@@ -123,34 +123,29 @@ $(document).ready(function(){
 // Brand owl carousel slider
 
  // start product section tabs 
-      // Tab Functionality
       document.querySelectorAll(".tab-link").forEach((button) => {
         button.addEventListener("click", function () {
           const tabId = this.dataset.tab;
 
-          // Remove active class from all tabs and content
           document.querySelectorAll(".tab-link").forEach((btn) => btn.classList.remove("active"));
           document.querySelectorAll(".tab-content").forEach((content) => content.classList.remove("active"));
 
-          // Add active class to current tab and its content
           this.classList.add("active");
           const activeTab = document.getElementById(tabId);
           activeTab.classList.add("active");
 
-          // Add animation classes to cards (even/odd)
           const cards = activeTab.querySelectorAll(".card");
           cards.forEach((card, index) => {
             if (index % 2 === 0) {
-              card.classList.add("even"); // Apply slide from left
+              card.classList.add("even"); 
             } else {
-              card.classList.add("odd"); // Apply slide from right
+              card.classList.add("odd"); 
             }
           });
         });
       });
 
 // counter 
-    // সমস্ত 'productCounter' এলিমেন্ট সংগ্রহ করুন
 const counters = document.querySelectorAll(".productCounter");
 
 counters.forEach((counter) => {
@@ -158,15 +153,13 @@ counters.forEach((counter) => {
   const incrementButton = counter.querySelector(".increment");
   const valueElement = counter.querySelector(".value");
 
-  let count = 1; // প্রতিটি কাউন্টারের জন্য আলাদা ভেরিয়েবল
+  let count = 1; 
 
-  // ইনক্রিমেন্ট ইভেন্ট হ্যান্ডলার
   incrementButton.addEventListener("click", () => {
     count++;
     valueElement.textContent = count;
   });
 
-  // ডিক্রিমেন্ট ইভেন্ট হ্যান্ডলার
   decrementButton.addEventListener("click", () => {
     if (count > 0) {
       count--;
@@ -180,16 +173,15 @@ counters.forEach((counter) => {
  
 // Brand owl carousel slider 
 $(document).ready(function(){
-  // Initialize Owl Carousels for multiple sliders
   $(".sellingSliderWrapper").each(function () {
     var owl = $(this); // Each individual carousel
 
     owl.owlCarousel({
-      items: 1, // Default to 1 item
+      items: 1, 
       loop: true,
       margin: 10,
-      nav: false, // Disable default nav
-      dots: false, // Disable dots
+      nav: false, 
+      dots: false, 
       responsive: {
         0: {
           items: 1,
@@ -223,3 +215,67 @@ $(document).ready(function(){
 });
 
 // Brand owl carousel slider
+
+// gpt scroll animation for discount section 
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".card");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+        } else {
+          entry.target.classList.remove("animate");
+        }
+      });
+    },
+    {
+      threshold: 0.2, 
+    }
+  );
+
+  cards.forEach((card, index) => {
+    if (index % 3 === 0) {
+      card.setAttribute("data-direction", "left");
+    } else if (index % 3 === 1) {
+      card.setAttribute("data-direction", "top");
+    } else {
+      card.setAttribute("data-direction", "right");
+    }
+    observer.observe(card);
+  });
+});
+
+// gpt scroll animation for discount section
+
+// gpt scroll animation for Blog section 
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".card");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+        } else {
+          entry.target.classList.remove("animate");
+        }
+      });
+    },
+    {
+      threshold: 0.2, 
+    }
+  );
+
+  cards.forEach((card, index) => {
+    if (index % 3 === 0) {
+      card.setAttribute("data-direction", "left");
+    } else if (index % 3 === 1) {
+      card.setAttribute("data-direction", "top");
+    } else {
+      card.setAttribute("data-direction", "right");
+    }
+    observer.observe(card);
+  });
+});
+
+// gpt scroll animation for Blog section 
