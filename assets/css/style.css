@@ -923,6 +923,18 @@ margin-bottom: 50px;
   margin: 100px auto !important;
   min-height: 50vh !important;
 }
+#blog .blogHeading{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 50px ;
+}
+#blog .blogHeading button{
+  border: none !important;
+  outline: none !important;
+}
+
 #blog .container-fluid{
   min-height: 50vh !important;
 }
